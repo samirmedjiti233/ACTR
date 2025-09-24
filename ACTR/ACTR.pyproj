@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f926103e-5908-47e7-a9b1-cc0e79309e62</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ACTR.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +22,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ACTR.py" />
+    <Folder Include="actr\" />
+    <Folder Include="examples\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="actr\activation.py" />
+    <Compile Include="actr\belief_base.py" />
+    <Compile Include="actr\conditional.py" />
+    <Compile Include="actr\inference.py" />
+    <Compile Include="actr\__init__.py" />
+    <Compile Include="examples\birds_example.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
